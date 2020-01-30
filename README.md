@@ -11,3 +11,4 @@ Demo : https://amazonaapp.herokuapp.com/
 - Video-05-Sidebar
 - Video-06-Create-React-App
 - Video-07-Render-Products-Array
+- Video-08-React-Router-Product-Details
