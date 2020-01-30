@@ -9,3 +9,5 @@ Demo : https://amazonaapp.herokuapp.com/
 - Video-03-Website-Template
 - Video-04-Product-List
 - Video-05-Sidebar
+- Video-06-Create-React-App
+- Video-07-Render-Products-Array
