@@ -15,3 +15,4 @@ Demo : https://amazonaapp.herokuapp.com/
 - Video-09-Create-Node-Express-Server
 - Video-10-Fetch-Server-Data-Using-React-Hooks
 - Video-11-Manage-State-With-Redux
+- Video-12-Add-Redux-To-Product-Details
