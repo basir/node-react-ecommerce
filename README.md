@@ -18,3 +18,8 @@ Demo : https://amazonaapp.herokuapp.com/
 - Video-12-Add-Redux-To-Product-Details
 - Video-13-Shopping-Cart-Screen
 - Video-14-Connect-to-MongoDB
+- Video-15-Signin-Users
+  - userRoute post findOne {_id, ... , token: getToken(user)}
+  - util getToken jwt.sign({user}, config.JWT_SECRET, {expiresIn:'48h'})
+  - isAuth token = req.headers.authorization token.slice(7, token.length)
+  - jwt.verify(token, config.JWT, (err, decode)=> { req.user = decode; next()})
