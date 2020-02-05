@@ -18,8 +18,17 @@ Demo : https://amazonaapp.herokuapp.com/
 - Video-12-Add-Redux-To-Product-Details
 - Video-13-Shopping-Cart-Screen
 - Video-14-Connect-to-MongoDB
-- Video-15-Signin-Users
-  - userRoute post findOne {_id, ... , token: getToken(user)}
-  - util getToken jwt.sign({user}, config.JWT_SECRET, {expiresIn:'48h'})
-  - isAuth token = req.headers.authorization token.slice(7, token.length)
-  - jwt.verify(token, config.JWT, (err, decode)=> { req.user = decode; next()})
+- Video-15-Signin-Register-Users
+- Video-16-Manage-Products-Screen
+  1. isAuth token = req.headers.authorization token.slice(7, token.length)
+  2. Create ProductsScreen.js and add to Add Route to App.js
+  3. product list 
+  4.  Define State for id, name, brand, category, image, price, countInStock, description
+- Video-17-Checkout-Wizard-Screen
+- Video-18-Order-Details-Screen
+- Video-19-Connect-to-Paypal
+- Video-20-User-Profile
+- Video-21-Manage-Order-Screen
+- Video-22-Filter-Sort-Products
+- Video-23-Deploy-Website-on-Heroku
+
