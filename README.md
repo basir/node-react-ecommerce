@@ -20,12 +20,8 @@ Demo : https://amazonaapp.herokuapp.com/
 - Video-14-Connect-to-MongoDB
 - Video-15-Signin-Register-Users
 - Video-16-Manage-Products-Screen
-  1. isAuth token = req.headers.authorization token.slice(7, token.length)
-  2. Create ProductsScreen.js and add to Add Route to App.js
-  3. product list 
-  4.  Define State for id, name, brand, category, image, price, countInStock, description
 - Video-17-Checkout-Wizard-Screen
-- Video-18-Order-Details-Screen
+- Video-18-Create-Order
 - Video-19-Connect-to-Paypal
 - Video-20-User-Profile
 - Video-21-Manage-Order-Screen

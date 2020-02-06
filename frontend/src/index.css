@@ -308,3 +308,66 @@ th{
 tbody>tr:nth-child(odd){
   background-color: #f0f0f0;
 }
+
+/* Checkout Steps */
+
+.checkout-steps{
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  margin: 1rem auto;
+ 
+}
+.checkout-steps > div{
+  border-top: .3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1 1;
+  padding-top: 1rem;
+}
+.checkout-steps > div.active{
+  border-top: .3rem #f08000 solid;
+  color: #f08000;
+}
+
+/* Place Order */
+
+.placeorder{
+  display: flex;
+  flex-grow: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.placeorder-info{
+  flex: 3 1 60rem; 
+}
+.placeorder-action{
+  flex: 1 1 20rem;
+  border: .1rem #c0c0c0 solid;
+  border-radius: .5rem;
+  background-color: #fcfcfc;
+  padding: 1rem;
+}
+.placeorder-info > div{
+  border: .1rem #c0c0c0 solid;
+  border-radius: .5rem;
+  background-color: #fcfcfc;
+  padding: 1rem;
+  margin: 1rem;
+}
+.placeorder-info > div:first-child{
+  margin-top: 0;
+}
+.placeorder-action > ul {
+  padding: 0;
+  list-style-type: none;
+}
+.placeorder-action > ul > li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.placeorder-action > ul > li:last-child{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c04000;
+}
