@@ -13,6 +13,7 @@ import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import OrdersScreen from './screens/OrdersScreen';
 
 function App() {
 
@@ -41,6 +42,17 @@ function App() {
               userInfo ? <Link to="/profile">{userInfo.name}</Link> :
                 <Link to="/signin">Sign In</Link>
             }
+            {userInfo && userInfo.isAdmin && (
+              <div className="dropdown">
+                <a href="#"  >Admin</a>
+                <ul className="dropdown-content">
+                  <li>
+                    <Link to="/orders">Orders</Link>
+                    <Link to="/products">Products</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </header>
         <aside className="sidebar">
@@ -59,6 +71,7 @@ function App() {
         </aside>
         <main className="main">
           <div className="content">
+            <Route path="/orders" component={OrdersScreen} />
             <Route path="/profile" component={ProfileScreen} />
             <Route path="/order/:id" component={OrderScreen} />
             <Route path="/products" component={ProductsScreen} />
