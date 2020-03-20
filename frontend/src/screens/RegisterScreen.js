@@ -26,7 +26,6 @@ function RegisterScreen(props) {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(register(name, email, password));
-
   }
   return <div className="form">
     <form onSubmit={submitHandler} >

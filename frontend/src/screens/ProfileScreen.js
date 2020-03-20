@@ -75,7 +75,6 @@ function ProfileScreen(props) {
               <button type="submit" className="button primary">Update</button>
             </li>
             <li>
-
               <button type="button" onClick={handleLogout} className="button secondary full-width">Logout</button>
             </li>
 
@@ -112,7 +111,6 @@ function ProfileScreen(props) {
       }
     </div>
   </div>
-
 }
 
 export default ProfileScreen;
