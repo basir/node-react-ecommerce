@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
 import HomeScreen from './screens/HomeScreen1';
-import ProductScreen from './screens/ProductScreen';
+import ProductScreen from './screens/ProductScreen1';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import { useSelector } from 'react-redux';
