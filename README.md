@@ -1,18 +1,11 @@
----
-title: React & Node Tutorial - Full ECommerce in 5 Hours [2020]
-published: true
-description: You will learn React, Redux, Node, Express, and MongoDB to build a fully-functional e-commerce website like Amazon
-tags: React, Nodejs, Tutorial
-cover_image: https://dev-to-uploads.s3.amazonaws.com/i/1shw932dw7zutl5u617t.png
----
+# React & Node Tutorial - Full ECommerce in 5 Hours [2020]
 Welcome to my React and Node tutorial to build a fully-functional e-commerce website in 5 hours. Open your code editor and follow me for the next hours to build an e-commerce website using React and Node.JS.
 
-## Source Code and Demo
+## Demo
 👉 Demo : https://node-react-ecommerce-app.herokuapp.com
-👉 Code : https://github.com/basir/node-react-ecommerce
 
 ## Watch React & Node Tutorial
-{% youtube Fy9SdZLBTOo %}
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Fy9SdZLBTOo/0.jpg)](https://www.youtube.com/watch?v=Fy9SdZLBTOo)
 
 ## You Will Learn
  - HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
