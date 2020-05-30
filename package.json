@@ -37,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/basir/amazona/issues"
   },
-  "homepage": "https://github.com/basir/amazona#readme",
+  "homepage": "https://github.com/basir/amazona",
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"
