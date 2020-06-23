@@ -9,7 +9,8 @@
     "eslint-plugin-react": "^7.19.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.8.11"
+    "mongoose": "^5.8.11",
+    "multer": "^1.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
