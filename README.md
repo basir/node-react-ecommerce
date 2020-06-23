@@ -4,7 +4,7 @@ Welcome to my React and Node tutorial to build a fully-functional e-commerce web
 
 ## Demo Website
 
-👉 Demo : https://node-react-ecommerce-app.herokuapp.com
+👉 Demo : https://nodereact-ecommerce-app.herokuapp.com/
 
 ## Video Tutorial
 
