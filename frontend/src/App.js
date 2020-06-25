@@ -85,7 +85,7 @@ function App() {
             <Route path="/" exact={true} component={HomeScreen} />
           </div>
         </main>
-        <footer className="footer">All right reserved.</footer>
+        <footer className="footer">All rights reserved.</footer>
       </div>
     </BrowserRouter>
   );
