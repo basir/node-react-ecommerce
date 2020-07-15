@@ -19,7 +19,7 @@ Welcome to my React and Node tutorial to build a fully-functional e-commerce web
 - Redux: Store, Reducers, Actions
 - Node & Express: Web API, Body Parser, File Upload, JWT
 - MongoDB: Mongoose, Aggregation
-- Development: ESLint, Babel, Git, Github,
+- Development: ESLint, Babel, Git, GitHub,
 - Deployment: Heroku
 - Watch React & Node Tutorial
 
@@ -106,7 +106,7 @@ We need to register the user before redirecting them to the checkout. In this pa
 
 ### [03:56:02 Part 16- Manage Products](https://www.youtube.com/watch?v=Fy9SdZLBTOo&t=14162s)
 
-Admin should be able to define products and update the count in stock whenever they like. This page is about managing ECommerce products.
+Admin should be able to define products and update the count in stock whenever they like. This page is about managing e-commerce products.
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/154a5zk6vfapukjaxwyu.png)
 
 ### [04:38:43 Part 17- Checkout Wizard](https://www.youtube.com/watch?v=Fy9SdZLBTOo&t=16723s)
@@ -124,8 +124,8 @@ It shows all details about an order includeing shipping, payments and order item
 
 ### Part 19- Connect to PayPal
 
-This parts create PaypalButton component to show paypal payment button on the screen.
-when users click on it, they will be redirected to paypal website to make the payment.
+This parts create PaypalButton component to show PayPal payment button on the screen.
+when users click on it, they will be redirected to PayPal website to make the payment.
 after payment users will be redirected to details page of the order.
 
 ### Part 20- Manage Order Screen
@@ -142,7 +142,7 @@ In the home page, right after header, there is a filter bar to filter products b
 
 ### Part 23- Deploy Website on Heroku
 
-This section explains all steps to publish the ecommerce website on heroku. first you need to create a cloud mongodb and the make an account on heroku.
+This section explains all steps to publish the ecommerce website on Heroku. first you need to create a cloud MongoDB and the make an account on Heroku.
 
 ### Part 24- Rate and Review Products
 
@@ -181,7 +181,7 @@ This part shows list of reviews by users for each products. also it provides a f
 
 ### Part 25- Upload Product Images On Local Server
 
-Admin shoud be able to uploads photos from their computer. This section is about uploading images on local server ans aws s3 cloud server.
+Admin shoud be able to uploads photos from their computer. This section is about uploading images on local server ans AWS S3 cloud server.
 
 1. npm install multer
 2. routes/uploadRoute.js
@@ -203,7 +203,7 @@ Admin shoud be able to uploads photos from their computer. This section is about
 
 ### Part 26- Upload Product Images On AWS S3
 
-This section is about uploading images amazon aws s3 cloud server.
+This section is about uploading images Amazon AWS S3 cloud server.
 
 1. create aws account
 2. open https://s3.console.aws.amazon.com
@@ -222,7 +222,7 @@ This section is about uploading images amazon aws s3 cloud server.
 15. return req.file.location
 16. ProductsScreen.js
 17. on handleUploadImage set axios.post('api/uploads/s3')
-18. check result on website and s3
+18. check result on website and S3
 
 ## Summary
 
