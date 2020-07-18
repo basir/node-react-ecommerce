@@ -134,7 +134,7 @@ This is an admin page to manage list of orders. Admin can delete an order or set
 
 ### Part 21- User Profile Screen
 
-When user click on thier name on the header menu, this page appears. It consists of two sections. First an profile update form and second order history.
+When user click on their name on the header menu, this page appears. It consists of two sections. First an profile update form and second order history.
 
 ### Part 22- Filter and Sort Products
 
