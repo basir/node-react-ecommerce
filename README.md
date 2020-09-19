@@ -4,7 +4,7 @@ Welcome to my React and Node tutorial to build a fully-functional e-commerce web
 
 ## Demo Website
 
-👉 Demo : https://nodereact-ecommerce-app.herokuapp.com/
+👉 Demo : https://oldamazona.webacademy.pro
 
 ## Video Tutorial
 
@@ -67,7 +67,10 @@ $ npm start
 - Run http://localhost:3000/products
 - Click create product and enter product info
 
-Let me know if you have any questions. [Email Basir](mailto:basir.jafarzadeh@gmail.com)
+## Support
+
+- Q/A: https://webacademy.pro/oldamazona
+- Contact Instructor: [Basir](mailto:basir.jafarzadeh@gmail.com)
 
 ## Video Tutorials
 
