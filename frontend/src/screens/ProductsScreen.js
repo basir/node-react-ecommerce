@@ -168,7 +168,7 @@ function ProductsScreen(props) {
                 ></input>
               </li>
               <li>
-                <label htmlFor="name">Category</label>
+                <label htmlFor="category">Category</label>
                 <input
                   type="text"
                   name="category"
