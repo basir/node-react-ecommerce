@@ -36,6 +36,12 @@ $ cd node-react-ecommerce
 
 Download it from here: https://docs.mongodb.com/manual/administration/install-community/
 
+Or installing MongoDB in code editor use command :
+
+sudo apt-get update 
+
+sudo apt-get install -y mongodb-org
+
 ### 3. Run Backend
 
 ```
