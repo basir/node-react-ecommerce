@@ -5,16 +5,16 @@ import { isAuth, isAdmin } from '../util';
 const router = express.Router();
 
 router.get("/", isAuth, async (req, res) => {
-  const orders = await Order.find({}).populate('user');
+  const orders = await Order.find({}).populate('user').lean();
   res.send(orders);
 });
 router.get("/mine", isAuth, async (req, res) => {
-  const orders = await Order.find({ user: req.user._id });
+  const orders = await Order.find({ user: req.user._id }).lean();
   res.send(orders);
 });
 
 router.get("/:id", isAuth, async (req, res) => {
-  const order = await Order.findOne({ _id: req.params.id });
+  const order = await Order.findOne({ _id: req.params.id }).lean();
   if (order) {
     res.send(order);
   } else {
