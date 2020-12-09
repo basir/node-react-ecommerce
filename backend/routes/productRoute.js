@@ -21,12 +21,12 @@ router.get('/', async (req, res) => {
     : { _id: -1 };
   const products = await Product.find({ ...category, ...searchKeyword }).sort(
     sortOrder
-  );
+  ).lean();
   res.send(products);
 });
 
 router.get('/:id', async (req, res) => {
-  const product = await Product.findOne({ _id: req.params.id });
+  const product = await Product.findOne({ _id: req.params.id }).lean();
   if (product) {
     res.send(product);
   } else {
