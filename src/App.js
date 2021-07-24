@@ -20,8 +20,9 @@ function App() {
       <div className="grid-container">
         <header className="header">
           <div className="brand">
-            <button onClick={openMenu}>&#9776;</button>
-            <Link to="/">amazona</Link>
+            <Link to="/">
+              <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
+            </Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>

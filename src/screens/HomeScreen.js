@@ -22,6 +22,7 @@ function HomeScreen(props) {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    console.log(e.target.value);
     dispatch(listProducts(category, searchKeyword, sortOrder));
   };
   const sortHandler = (e) => {
