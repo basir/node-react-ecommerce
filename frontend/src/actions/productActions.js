@@ -26,14 +26,13 @@ const listProducts = (
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
     const { data } = await axios.get(
-      '/api/products?category=' +
-        category +
-        '&searchKeyword=' +
-        searchKeyword +
-        '&sortOrder=' +
-        sortOrder
+      'https://c4400c94.us-south.apigw.appdomain.cloud/call-for-code/users'
     );
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    const products = data.users.flatMap(user=> {
+      return user.products
+    }).filter(Boolean)
+    console.log(products)
+    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: products });
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
   }

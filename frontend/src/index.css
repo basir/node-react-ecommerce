@@ -28,7 +28,7 @@ button {
 }
 .header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #26836f;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
