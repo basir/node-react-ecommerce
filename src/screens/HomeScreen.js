@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { useSelector, useDispatch } from 'react-redux';
-import { listProducts } from '../actions/productActions';
-import Rating from '../components/Rating';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
+import { listProducts } from "../actions/productActions";
+import Rating from "../components/Rating";
 
 function HomeScreen(props) {
-  const [searchKeyword, setSearchKeyword] = useState('');
-  const [sortOrder, setSortOrder] = useState('');
-  const category = props.match.params.id ? props.match.params.id : '';
+  const [searchKeyword, setSearchKeyword] = useState("");
+  const [sortOrder, setSortOrder] = useState("");
+  const category = props.match.params.id ? props.match.params.id : "";
   const productList = useSelector((state) => state.productList);
   const { products, loading, error } = productList;
   const dispatch = useDispatch();
@@ -44,7 +44,7 @@ function HomeScreen(props) {
           </form>
         </li>
         <li>
-          Sort By{' '}
+          Sort By{" "}
           <select name="sortOrder" onChange={sortHandler}>
             <option value="">Newest</option>
             <option value="lowest">Lowest</option>
@@ -61,7 +61,7 @@ function HomeScreen(props) {
           {products.map((product) => (
             <li key={product._id}>
               <div className="product">
-                <Link to={'/product/' + product._id}>
+                <Link to={"/product/" + product.id}>
                   <img
                     className="product-image"
                     src={product.image}
@@ -69,14 +69,15 @@ function HomeScreen(props) {
                   />
                 </Link>
                 <div className="product-name">
-                  <Link to={'/product/' + product._id}>{product.name}</Link>
+                  <Link to={"/product/" + product.id}>{product.name}</Link>
                 </div>
-                <div className="product-brand">{product.brand}</div>
+
                 <div className="product-price">${product.price}</div>
+                <div>Cidade: {product.address.city}</div>
                 <div className="product-rating">
                   <Rating
                     value={product.rating}
-                    text={product.numReviews + ' reviews'}
+                    text={product.numReviews + " reviews"}
                   />
                 </div>
               </div>

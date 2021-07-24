@@ -14,26 +14,23 @@ import {
   PRODUCT_REVIEW_SAVE_REQUEST,
   PRODUCT_REVIEW_SAVE_FAIL,
   PRODUCT_REVIEW_SAVE_SUCCESS,
-} from '../constants/productConstants';
-import axios from 'axios';
-import Axios from 'axios';
+} from "../constants/productConstants";
+import axios from "axios";
+import Axios from "axios";
 
-const listProducts = (
-  category = '',
-  searchKeyword = '',
-  sortOrder = ''
-) => async (dispatch) => {
+const listProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
     const { data } = await axios.get(
-      '/api/products?category=' +
-        category +
-        '&searchKeyword=' +
-        searchKeyword +
-        '&sortOrder=' +
-        sortOrder
+      "https://c4400c94.us-south.apigw.appdomain.cloud/call-for-code/users"
     );
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+
+    const products = data.users
+      .flatMap((user) => user.products)
+      .filter(Boolean);
+
+    localStorage.setItem("products", JSON.stringify(products));
+    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: products });
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
   }
@@ -46,19 +43,19 @@ const saveProduct = (product) => async (dispatch, getState) => {
       userSignin: { userInfo },
     } = getState();
     if (!product._id) {
-      const { data } = await Axios.post('/api/products', product, {
+      const { data } = await Axios.post("/api/products", product, {
         headers: {
-          Authorization: 'Bearer ' + userInfo.token,
+          Authorization: "Bearer " + userInfo.token,
         },
       });
       dispatch({ type: PRODUCT_SAVE_SUCCESS, payload: data });
     } else {
       const { data } = await Axios.put(
-        '/api/products/' + product._id,
+        "/api/products/" + product._id,
         product,
         {
           headers: {
-            Authorization: 'Bearer ' + userInfo.token,
+            Authorization: "Bearer " + userInfo.token,
           },
         }
       );
@@ -72,7 +69,17 @@ const saveProduct = (product) => async (dispatch, getState) => {
 const detailsProduct = (productId) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST, payload: productId });
-    const { data } = await axios.get('/api/products/' + productId);
+
+    let data = localStorage.getItem("products");
+
+    if (!data) {
+      const result = await axios.get("/api/products/" + productId);
+      data = result.data;
+    } else {
+      data = JSON.parse(data).find((product) => product.id === productId);
+      console.log(data);
+    }
+
     dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
@@ -85,9 +92,9 @@ const deleteProdcut = (productId) => async (dispatch, getState) => {
       userSignin: { userInfo },
     } = getState();
     dispatch({ type: PRODUCT_DELETE_REQUEST, payload: productId });
-    const { data } = await axios.delete('/api/products/' + productId, {
+    const { data } = await axios.delete("/api/products/" + productId, {
       headers: {
-        Authorization: 'Bearer ' + userInfo.token,
+        Authorization: "Bearer " + userInfo.token,
       },
     });
     dispatch({ type: PRODUCT_DELETE_SUCCESS, payload: data, success: true });
@@ -109,7 +116,7 @@ const saveProductReview = (productId, review) => async (dispatch, getState) => {
       review,
       {
         headers: {
-          Authorization: 'Bearer ' + token,
+          Authorization: "Bearer " + token,
         },
       }
     );
