@@ -28,13 +28,18 @@ button {
 }
 .header {
   grid-area: header;
-  background-color: #FFF0A5;
+  background-color: #FFB03B ;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
 }
+
+.buttonMenu {
+  margin-bottom: 3rem;
+}
+
 .brand a {
   color: #ffffff;
   font-size: 3rem;
@@ -43,8 +48,8 @@ button {
 }
 
 .imgLogo{
-  display: flex;
-  width: 12rem;
+  width: 10rem;
+  margin-top: 2rem;
 }
 .header-links a {
   color: #ffffff;
@@ -67,6 +72,7 @@ button {
 }
 a {
   text-decoration: none;
+  color: #8E2800;
 }
 a:hover {
   color: #ff8000;
@@ -77,6 +83,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 .products li {
   list-style-type: none;
@@ -105,8 +112,9 @@ a:hover {
   font-weight: bold;
 }
 .product-image {
-  max-width: 34rem;
+  max-width: 28rem;
   max-height: 34rem;
+  border-radius: 3rem;
 }
 .product-rating {
   margin-bottom: 1rem;

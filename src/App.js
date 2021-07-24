@@ -4,6 +4,8 @@ import "./App.css";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import { useSelector } from "react-redux";
+import LogoEco from "./../src/assets/ecologo.png";
+
 
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -16,7 +18,6 @@ function App() {
     document.querySelector(".sidebar").classList.remove("open");
   };
   return (
-    <>
     <BrowserRouter>
       <div className="grid-container">
         <header className="header">
@@ -71,7 +72,6 @@ function App() {
         <footer className="footer">All right reserved.</footer>
       </div>
     </BrowserRouter>
-    <>
   );
 }
 
