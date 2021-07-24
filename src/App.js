@@ -16,10 +16,12 @@ function App() {
     document.querySelector(".sidebar").classList.remove("open");
   };
   return (
+    <>
     <BrowserRouter>
       <div className="grid-container">
         <header className="header">
-          <div className="brand">
+          <div className="brand">            
+          <button onClick={openMenu}>&#9776;</button>
             <Link to="/">
               <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
             </Link>
@@ -69,6 +71,7 @@ function App() {
         <footer className="footer">All right reserved.</footer>
       </div>
     </BrowserRouter>
+    <>
   );
 }
 
