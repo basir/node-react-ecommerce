@@ -14,6 +14,7 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import OrdersScreen from './screens/OrdersScreen';
+import LogoEco from './../src/assets/ecologo.png';
 
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -30,8 +31,7 @@ function App() {
       <div className="grid-container">
         <header className="header">
           <div className="brand">
-            <button onClick={openMenu}>&#9776;</button>
-            <Link to="/">E-co</Link>
+            <Link to="/"><img className="imgLogo" src={LogoEco} alt="logo do projeto" /></Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
