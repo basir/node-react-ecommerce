@@ -48,7 +48,7 @@ function ProductScreen(props) {
   return (
     <div>
       <div className="back-to-result">
-        <Link to="/">Back to result</Link>
+        <Link to="/"> ← Back to result</Link>
       </div>
       {loading ? (
         <div>Loading...</div>
@@ -62,9 +62,6 @@ function ProductScreen(props) {
             </div>
             <div className="details-info">
               <ul>
-                <li>
-                  Price: <b>${product.price}</b>
-                </li>
                 <li>
                   <h4>{product.name}</h4>
                 </li>
