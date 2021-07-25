@@ -30,7 +30,7 @@ button {
 }
 .header {
   grid-area: header;
-  background-color: #FFB03B ;
+  background-color: #e2f3a7 ;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -51,12 +51,13 @@ button {
 .imgLogo{
   width: 10rem;
   margin-top: 1rem;
-  margin-left: 1rem
+  margin-left: 2rem
 }
 .header-links a {
-  color: #ffffff;
+  color: #00a033;
   text-decoration: none;
   padding: 1rem;
+  font-weight: bold;
 }
 .header-links a:hover {
   color: #ff8000;
@@ -65,15 +66,47 @@ button {
   grid-area: main;
   background-color: #f8f7f7;
 }
-.footer {
-  grid-area: footer;
-  background-color: #FFF0A5;
-  color: rgb(7, 6, 6);
+
+.rodape {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  background-color: #fcfcfc;
+  color: rgb(7, 6, 6);
+}
+
+.rodape__cc {
+  width: 100%;
+  background-color: #e2f3a7;
+  font-size: 14px;
+  text-align: center;
+  padding: 1px;
+      color: green;
+}
+
+.descriçãoEco {
+  width: 30rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  margin-top: 0.5px;
+  color: #8e2800;
+  text-align: center;
+}
+
+.imgFooter {
+  margin: 2rem;
+  margin-right: 2rem;
   
 }
+
+.titulo--redes {
+  color: #8e2800;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 a {
   text-decoration: none;
   color: #8E2800;
@@ -173,6 +206,7 @@ a > .rating > span:last-child {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  margin-left: 1rem;
 }
 .sidebar {
   position: fixed;
