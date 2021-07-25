@@ -1,10 +1,10 @@
-# Projeto e-co realizado para o Hackathon Call for code - IBM
+# Projeto e-co realizado para o Hackathon Call for Code - IBM
  
 ## Escolhemos o desafio 3. Nosso projeto é um marketplace para pequenos agricultores e artesãos.
  
 ## Instalando
 ### Para instalar as dependências do projeto, execute os seguintes comandos no terminal:
-#### - nmp install
+#### - npm install
 #### - npm start
  
 ## Tecnologias utilizadas
