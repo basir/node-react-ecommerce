@@ -78,7 +78,7 @@ function App() {
             <Route path="/" exact={true} component={HomeScreen} />
           </div>
         </main>
-        <footer className="footer">
+        <footer>
           <div className="rodape">
             <div>
               <Link className="link" to="/">

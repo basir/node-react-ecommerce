@@ -576,13 +576,23 @@ tbody > tr:nth-child(odd) {
 }
 
 
-@media (min-width: 576px) { 
+@media (max-width: 425px) { 
   .details {
-    max-height: 100rem;
+    max-height: 80rem;
+  }
+
+  .rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .titulo--redes {
+    text-align: center;
   }
 }
 
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
   .details {
     max-height: 100rem;
   }
