@@ -33,7 +33,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
 }
 
 .buttonMenu {
@@ -49,7 +48,8 @@ button {
 
 .imgLogo{
   width: 10rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem
 }
 .header-links a {
   color: #ffffff;
@@ -61,14 +61,16 @@ button {
 }
 .main {
   grid-area: main;
+  background-color: #f8f7f7;
 }
 .footer {
   grid-area: footer;
-  background-color: #203040;
-  color: #ffffff;
+  background-color: #FFF0A5;
+  color: rgb(7, 6, 6);
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 a {
   text-decoration: none;
@@ -91,34 +93,43 @@ a:hover {
   flex: 0 1 34rem;
   margin: 1rem;
   height: 50rem;
-  border-bottom: 0.1rem #c0c0c0 solid;
 }
 .product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  height: 75%;
+  box-shadow: 0px 70px 84px -20px rgba(0, 0, 0, 0.1);
 }
 .product-name {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
 }
 .product-brand {
   font-size: 1.2rem;
   color: #808080;
 }
 .product-price {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+
 }
 .product-image {
-  max-width: 28rem;
+  max-width: 20rem;
   max-height: 34rem;
-  border-radius: 3rem;
+  border-radius: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
 }
 .product-rating {
   margin-bottom: 1rem;
 }
+
+.imgLocalização{
+  margin-right: 1rem;
+}
+
 /* Reviews */
 ul.review {
   list-style-type: none;
@@ -147,6 +158,11 @@ a > .rating > span:last-child {
 }
 
 /* Sidebar */
+
+.brand {
+  display: flex;
+  align-items: center;
+}
 
 .brand button {
   font-size: 3rem;
@@ -455,6 +471,7 @@ tbody > tr:nth-child(odd) {
   max-width: 45rem;
   justify-content: space-between;
   align-items: center;
+  margin-top: 7rem;
 }
 .filter input,
 .filter button,

@@ -63,6 +63,9 @@ function ProductScreen(props) {
             <div className="details-info">
               <ul>
                 <li>
+                  Price: <b>${product.price}</b>
+                </li>
+                <li>
                   <h4>{product.name}</h4>
                 </li>
                 <li>
@@ -72,9 +75,6 @@ function ProductScreen(props) {
                       text={product.numReviews + " reviews"}
                     />
                   </a>
-                </li>
-                <li>
-                  Price: <b>${product.price}</b>
                 </li>
                 <li>
                   Description:

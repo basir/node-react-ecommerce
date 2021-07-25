@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { listProducts } from "../actions/productActions";
 import Rating from "../components/Rating";
+import Local from "./../assets/localização.png";
 
 function HomeScreen(props) {
   const [searchKeyword, setSearchKeyword] = useState("");
@@ -32,32 +32,6 @@ function HomeScreen(props) {
 
   return (
     <>
-      {category && <h2>{category}</h2>}
-
-      <ul className="filter">
-        <li>
-          <form onSubmit={submitHandler}>
-            <input
-              name="searchKeyword"
-              onChange={(e) => setSearchKeyword(e.target.value)}
-            />
-            <button type="submit">Search</button>
-          </form>
-        </li>
-        <li>
-          Sort By{" "}
-          <select name="sortOrder" onChange={sortHandler}>
-            <option value="">Newest</option>
-            <option value="lowest">Lowest</option>
-            <option value="highest">Highest</option>
-          </select>
-        </li>
-      </ul>
-      {loading ? (
-        <div>Loading...</div>
-      ) : error ? (
-        <div>{error}</div>
-      ) : (
         <ul className="products">
           {products.map((product) => (
             <li key={product._id}>
@@ -69,23 +43,22 @@ function HomeScreen(props) {
                     alt="product"
                   />
                 </Link>
+                <div className="product-price">${product.price}</div>
                 <div className="product-name">
                   <Link to={"/product/" + product.id}>{product.name}</Link>
                 </div>
 
-                <div className="product-price">${product.price}</div>
-                <div>Cidade: {product.address.city}</div>
                 <div className="product-rating">
                   <Rating
                     value={product.rating}
                     text={product.numReviews + " reviews"}
-                  />
+                    />
                 </div>
+                <div> <img className="imgLocalização" src={Local} alt="logo delocalização"/>City: {product.address.city}</div>
               </div>
             </li>
           ))}
         </ul>
-      )}
     </>
   );
 }
