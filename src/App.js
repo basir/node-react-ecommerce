@@ -26,7 +26,7 @@ function App() {
             </div>
             <div>
              <Link to="/">
-               <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
+              <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
              </Link>
             </div>
           </div>

@@ -114,6 +114,24 @@ function ProductScreen(props) {
               </ul>
             </div>
           </div>
+          <div className="history">
+            <div className="history-wrapper">
+            <div className="history-image">
+              <img src={product.image} alt="product"></img>
+            </div>
+            <div className="history-info">
+              <ul>
+                <li>
+                  <h4>{product.name}</h4>
+                </li>
+                <li>
+                  <div className="history-seller-bio">{product.description}</div>
+                </li>
+
+              </ul>
+            </div>
+            </div>
+          </div>
         </>
       )}
     </div>

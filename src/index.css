@@ -280,6 +280,46 @@ a > .rating > span:last-child {
 .text-center {
   text-align: center;
 }
+
+
+/* History details */
+
+.history-wrapper{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 5rem;
+  margin-bottom: 10%;
+  max-width: 800vh;
+  max-height: 20rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.history-image {
+  flex: 2 1 60rem;
+}
+.history-image img {
+  max-width: 24.68rem;
+  height: 13.87rem;
+  border-radius: 15px;
+  width: 100%;
+  margin: 1.2rem;
+}
+
+.history-info ul{
+  list-style-type: none;
+}
+
+.history-info h4{
+  font-size: 24px;
+}
+
+.history-seller-bio{
+  display: block;
+}
+
 /* Cart */
 
 .cart {
