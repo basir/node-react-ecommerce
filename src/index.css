@@ -1,9 +1,11 @@
 html {
   font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body {
-  font: 1.6rem Helvetica;
+  font: 1.5rem Roboto;
+  font-weight: 500;
   height: 100vh;
   margin: 0;
 }
@@ -203,15 +205,25 @@ a > .rating > span:last-child {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  background-color: #ffffff;
+  margin: 5rem;
+  border-radius: 15px;
+  max-height: 18rem;
   flex-wrap: wrap;
   padding: 1rem;
+}
+.details h4{
+  color: #B64926;
 }
 .details-image {
   flex: 2 1 60rem;
 }
 .details-image img {
-  max-width: 60rem;
+  max-width: 24rem;
+  height: 14.37rem;
+  border-radius: 15px;
   width: 100%;
+  margin: 1.2rem;
 }
 .details-info {
   flex: 1 1 30rem;
@@ -231,6 +243,14 @@ a > .rating > span:last-child {
 }
 .back-to-result {
   padding: 1rem;
+  margin-top: 2rem;
+}
+
+.back-to-result a{
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-left: 5rem;
+  border-radius: 15px;
 }
 .details-action {
   border: 0.1rem #808080 solid;
