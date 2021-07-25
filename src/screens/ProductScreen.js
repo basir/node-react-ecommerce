@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { detailsProduct, saveProductReview } from "../actions/productActions";
 import Rating from "../components/Rating";
 import { PRODUCT_REVIEW_SAVE_RESET } from "../constants/productConstants";
+import Local from "./../assets/localização.png"; 
 
 function ProductScreen(props) {
   const [qty, setQty] = useState(1);
@@ -81,35 +82,12 @@ function ProductScreen(props) {
             </div>
             <div className="details-action">
               <ul>
-                <li>Price: {product.price}</li>
+                <li className="price"><h4>R$ {product.price}</h4></li>
                 <li>
-                  Status:{" "}
-                  {product.countInStock > 0 ? "In Stock" : "Unavailable."}
-                </li>
-                <li>
-                  Qty:{" "}
-                  <select
-                    value={qty}
-                    onChange={(e) => {
-                      setQty(e.target.value);
-                    }}
-                  >
-                    {[...Array(product.countInStock).keys()].map((x) => (
-                      <option key={x + 1} value={x + 1}>
-                        {x + 1}
-                      </option>
-                    ))}
-                  </select>
-                </li>
-                <li>
-                  {product.countInStock > 0 && (
-                    <button
-                      onClick={handleAddToCart}
-                      className="button primary"
-                    >
-                      Add to Cart
-                    </button>
-                  )}
+                  <input type="number" placeholder="Qtd" class="details-action-input"></input>
+                </li>                
+                <li className="details-location">
+                <div> <img className="imgLocalização" src={Local} alt="logo delocalização"/>City: Gwenborough</div>
                 </li>
               </ul>
             </div>

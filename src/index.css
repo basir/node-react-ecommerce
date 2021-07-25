@@ -207,17 +207,16 @@ a > .rating > span:last-child {
   align-items: flex-start;
   background-color: #ffffff;
   margin: 5rem;
+  max-height: 25rem;
   border-radius: 15px;
-  max-height: 18rem;
   flex-wrap: wrap;
   padding: 1rem;
 }
 .details h4{
   color: #B64926;
+  font-size: 2rem;
 }
-.details-image {
-  flex: 2 1 60rem;
-}
+
 .details-image img {
   max-width: 24rem;
   height: 14.37rem;
@@ -227,6 +226,7 @@ a > .rating > span:last-child {
 }
 .details-info {
   flex: 1 1 30rem;
+  padding-left: 2rem;  
 }
 .details-action {
   flex: 1 1 30rem;
@@ -252,12 +252,26 @@ a > .rating > span:last-child {
   margin-left: 5rem;
   border-radius: 15px;
 }
-.details-action {
-  border: 0.1rem #808080 solid;
-  border-radius: 0.5rem;
-  background-color: #f8f8f8;
-  padding: 1rem;
+
+.details-action {  
+  margin-left: 2rem;
+  padding: 1rem 0px 1rem 4rem;
+  border-left: 1px solid #E0E0E0;
 }
+
+.details .details-action .price h4{
+  color: #000!important;
+  font-size: 2rem;
+}
+
+.details .details-action .details-action-input {
+  border-radius: 10rem;
+}
+
+.details .details-action .details-location {
+  margin-top: 6rem;  
+}
+
 .details-action ul li:last-child {
   display: flex;
   flex-direction: column;
@@ -512,4 +526,17 @@ tbody > tr:nth-child(odd) {
 
 .categories a:hover {
   background-color: #c0c0c0;
+}
+
+
+@media (min-width: 576px) { 
+  .details {
+    max-height: 100rem;
+  }
+}
+
+@media (min-width: 768px) { 
+  .details {
+    max-height: 100rem;
+  }
 }
