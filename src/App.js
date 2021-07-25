@@ -5,6 +5,9 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import { useSelector } from "react-redux";
 import LogoEco from "./../src/assets/ecologo.png";
+import ImgFace from "./assets/face.svg";
+import ImgInsta from "./assets/insta.svg";
+import ImgIN from "./assets/linkedin.svg";
 
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -25,9 +28,9 @@ function App() {
               <button onClick={openMenu}>&#9776;</button>
             </div>
             <div>
-             <Link to="/">
-               <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
-             </Link>
+              <Link to="/">
+                <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
+              </Link>
             </div>
           </div>
           <div className="header-links">
@@ -72,7 +75,40 @@ function App() {
             <Route path="/" exact={true} component={HomeScreen} />
           </div>
         </main>
-        <footer className="footer">E-co</footer>
+        <footer className="footer">
+          <div className="rodape">
+            <div>
+              <Link className="link" to="/">
+                <img className="imgLogo" src={LogoEco} alt="logo do projeto" />
+              </Link>
+            </div>
+            <div>
+              <p className="descriçãoEco">
+                Somos mais que um e-commerce. Somos e-co.
+              </p>
+            </div>
+            <div className="imgFooter">
+              <div>
+                <p className="titulo--redes">Contato:</p>
+              </div>
+              <div>
+                <a href="" target="_blank" rel="noreferrer">
+                  <img src={ImgFace} alt="Imagem da logo do Facebook" />
+                </a>
+                <a href="/" target="_blank" rel="noreferrer">
+                  <img src={ImgInsta} alt="Imagem da logo do Instagram" />
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                  <img src={ImgIN} alt="Imagem da logo do LinkedIN" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="rodape__cc">
+            <p> © 2021 | E-co</p>
+          </div>
+        </footer>
       </div>
     </BrowserRouter>
   );
