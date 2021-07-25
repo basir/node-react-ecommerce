@@ -54,17 +54,20 @@ function App() {
           </div>
         </header>
         <aside className="sidebar">
-          <h3>Categorias</h3>
+          <h3>Categories</h3>
           <button className="sidebar-close-button" onClick={closeMenu}>
             x
           </button>
           <ul className="categories">
             <li>
-              <Link to="/category/Pants">Sustentável</Link>
+              <Link to="/category/Pants">Artesanato</Link>
             </li>
 
             <li>
-              <Link to="/category/Shirts">Ecológico</Link>
+              <Link to="/category/Shirts"> Produtos Ecológicos</Link>
+            </li>
+            <li>
+              <Link to="/category/Shirts"> Produtos Veganos</Link>
             </li>
           </ul>
         </aside>
@@ -93,13 +96,13 @@ function App() {
               </div>
               <div>
                 <a href="" target="_blank" rel="noreferrer">
-                  <img src={ImgFace} alt="Imagem da logo do Facebook" />
+                  <img className="logoFace" src={ImgFace} alt="Imagem da logo do Facebook" />
                 </a>
                 <a href="/" target="_blank" rel="noreferrer">
-                  <img src={ImgInsta} alt="Imagem da logo do Instagram" />
+                  <img className="logoInsta" src={ImgInsta} alt="Imagem da logo do Instagram" />
                 </a>
                 <a href="" target="_blank" rel="noreferrer">
-                  <img src={ImgIN} alt="Imagem da logo do LinkedIN" />
+                  <img className="logoIN" src={ImgIN} alt="Imagem da logo do LinkedIN" />
                 </a>
               </div>
             </div>

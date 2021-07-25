@@ -86,12 +86,12 @@ button {
 }
 
 .descriçãoEco {
-  width: 30rem;
+  width: 28rem;
   margin-left: 2rem;
   font-weight: bold;
-  margin-top: 0.5px;
   color: #8e2800;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .imgFooter {
@@ -105,6 +105,18 @@ button {
   margin-bottom: 1rem;
   font-weight: bold;
   font-size: 2rem;
+}
+
+.logoFace {
+  margin-right: 1rem;
+}
+
+.logoInsta {
+  margin-right: 1rem;
+}
+
+.logoIN {
+  margin-right: 1rem;
 }
 
 a {
@@ -542,6 +554,7 @@ tbody > tr:nth-child(odd) {
 .categories a {
   display: flex;
   padding: 1rem;
+  color: #00a033;
 }
 
 .categories a:hover {
