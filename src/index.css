@@ -251,6 +251,7 @@ a > .rating > span:last-child {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   background-color: #ffffff;
   margin: 5rem;
   max-height: 30rem;
@@ -279,7 +280,7 @@ a > .rating > span:last-child {
 }
 .details-action {
   flex: 1 1 30rem;
-}
+} 
 
 .details-info ul,
 .details-action ul {
