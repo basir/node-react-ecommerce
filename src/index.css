@@ -575,6 +575,26 @@ tbody > tr:nth-child(odd) {
   background-color: #c0c0c0;
 }
 
+.details-image-location {
+  width: max-content;
+}
+
+.bio-name {
+  color: #FFB901
+}
+
+.selo-qualidade {
+  width: 60%;
+}
+
+.bio-title {
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+.remove-border {
+  border:none !important;
+}
 
 @media (min-width: 576px) { 
   .details {
