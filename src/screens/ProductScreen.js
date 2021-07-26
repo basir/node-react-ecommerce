@@ -105,7 +105,7 @@ function ProductScreen(props) {
             <div className="details-info">
               <ul>
                 <li>
-                  <span className="bio-title">Esse produto foi produzido pela <span className="bio-name">Dona Maria</span> em Recife-PE</span>
+                  <span className="bio-title">Esse produto foi produzido pela <span className="bio-name">Dona Maria</span> em Sobral-CE</span>
                 </li>
                 
                 <li>

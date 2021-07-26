@@ -253,9 +253,8 @@ a > .rating > span:last-child {
   align-items: flex-start;
   background-color: #ffffff;
   margin: 5rem;
-  max-height: 25rem;
+  max-height: 30rem;
   border-radius: 15px;
-  flex-wrap: wrap;
   padding: 1rem;
 }
 .details h4{
@@ -272,7 +271,11 @@ a > .rating > span:last-child {
 }
 .details-info {
   flex: 1 1 30rem;
-  padding-left: 2rem;  
+  padding-left: 3rem;  
+}
+
+.details-info li {
+  width: 40rem;
 }
 .details-action {
   flex: 1 1 30rem;
