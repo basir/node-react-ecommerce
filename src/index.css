@@ -340,6 +340,46 @@ a > .rating > span:last-child {
 .text-center {
   text-align: center;
 }
+
+
+/* History details */
+
+.history-wrapper{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 5rem;
+  margin-bottom: 10%;
+  max-width: 800vh;
+  max-height: 20rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.history-image {
+  flex: 2 1 60rem;
+}
+.history-image img {
+  max-width: 24.68rem;
+  height: 13.87rem;
+  border-radius: 15px;
+  width: 100%;
+  margin: 1.2rem;
+}
+
+.history-info ul{
+  list-style-type: none;
+}
+
+.history-info h4{
+  font-size: 24px;
+}
+
+.history-seller-bio{
+  display: block;
+}
+
 /* Cart */
 
 .cart {
@@ -596,13 +636,23 @@ tbody > tr:nth-child(odd) {
   border:none !important;
 }
 
-@media (min-width: 576px) { 
+@media (max-width: 425px) { 
   .details {
-    max-height: 100rem;
+    max-height: 80rem;
+  }
+
+  .rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .titulo--redes {
+    text-align: center;
   }
 }
 
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
   .details {
     max-height: 100rem;
   }
