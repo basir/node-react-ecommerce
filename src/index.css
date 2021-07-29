@@ -293,12 +293,15 @@ a > .rating > span:last-child {
   width: 35rem;
 }
 
+.buyButton{
+  margin-top: 5rem;
+}
+
 .buttonBuy{
   background-color: #e2f3a7;
   padding: 1rem;
   border-radius: 1rem;
   margin-right: 2rem;
-  margin-top: 2rem;
 }
 
 .back-to-result {

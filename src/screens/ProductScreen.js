@@ -95,9 +95,9 @@ function ProductScreen(props) {
                 <div> <img className="imgLocalização" src={Local} alt="logo delocalização"/>City: Gwenborough</div>
                 </li>                
               </ul>
-              <div>
-                <button className="buttonBuy">Buy Now</button>
-                <button className="buttonBuy">Add to cart</button>
+              <div className="buyButton">
+              <a href="#content" className="buttonBuy">Buy Now</a>
+                <a href="#content" className="buttonBuy">Add to cart</a>
               </div>
             </div>
           </div>
