@@ -249,12 +249,10 @@ a > .rating > span:last-child {
 /* Product Details */
 .details {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: #ffffff;
-  margin: 5rem;
-  max-height: 30rem;
+  margin: 4rem;
   border-radius: 15px;
   padding: 1rem;
 }
@@ -264,23 +262,25 @@ a > .rating > span:last-child {
 }
 
 .details-image img {
-  max-width: 24rem;
+  max-width: 20rem;
+  max-height: 34rem;
   height: 14.37rem;
   border-radius: 15px;
   width: 100%;
   margin: 1.2rem;
 }
 .details-info {
-  flex: 1 1 30rem;
-  padding-left: 3rem;  
+    padding-left: 2rem;  
+}
+
+.details-info img {
+  width: 20rem;
 }
 
 .details-info li {
-  width: 40rem;
+  width: 30rem;
+  word-wrap: break-word;
 }
-.details-action {
-  flex: 1 1 30rem;
-} 
 
 .details-info ul,
 .details-action ul {
@@ -290,7 +290,17 @@ a > .rating > span:last-child {
 .details-info li,
 .details-action li {
   margin-bottom: 1rem;
+  width: 35rem;
 }
+
+.buttonBuy{
+  background-color: #e2f3a7;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
 .back-to-result {
   padding: 1rem;
   margin-top: 2rem;
@@ -627,10 +637,6 @@ tbody > tr:nth-child(odd) {
   color: #FFB901
 }
 
-.selo-qualidade {
-  width: 60%;
-}
-
 .bio-title {
   font-size: 18pt;
   font-weight: 400;
@@ -642,10 +648,10 @@ tbody > tr:nth-child(odd) {
 
 @media (max-width: 425px) { 
   .details {
-    max-height: 80rem;
+    max-height: 120rem;
   }
 
-  .rodape {
+   .rodape {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -654,10 +660,14 @@ tbody > tr:nth-child(odd) {
   .titulo--redes {
     text-align: center;
   }
+
+  .bio-title {
+    font-size: 15pt;
+  }
 }
 
 @media (max-width: 768px) { 
   .details {
-    max-height: 100rem;
+    max-height: 120rem;
   }
 }
