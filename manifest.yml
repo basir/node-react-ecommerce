@@ -1,0 +1,11 @@
+applications:
+  - name: call-for-code-2021
+    path: .
+    command: node server.js
+    instances: 1
+    routes:
+      - route: maratona-cf-exemplo.mybluemix.net
+    random-route: true
+    memory: 128M
+    env:
+      PORT: 3000
