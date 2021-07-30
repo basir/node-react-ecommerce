@@ -28,7 +28,7 @@ button {
 }
 .header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #FFB03B ;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -40,6 +40,11 @@ button {
   font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
+}
+
+.imgLogo{
+  display: flex;
+  width: 12rem;
 }
 .header-links a {
   color: #ffffff;
